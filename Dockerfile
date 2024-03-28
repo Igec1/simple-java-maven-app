@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the compiled Java application JAR file into the container
-COPY target/hello-world.jar /app/
+COPY target/my-app-1.0-SNAPSHOT.jar /app/
 
 # Specify the command to run your Java application
-ENTRYPOINT ["java", "-jar", "hello-world.jar"]
+ENTRYPOINT ["java", "-jar", "my-app-1.0-SNAPSHOT.jar"]
